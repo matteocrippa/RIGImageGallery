@@ -70,7 +70,7 @@ open class RIGImageGalleryViewController: UIPageViewController {
     fileprivate var navigationBarsHidden = false
     fileprivate var zoomRecognizer = UITapGestureRecognizer()
     fileprivate var toggleBarRecognizer = UITapGestureRecognizer()
-    fileprivate var currentImageViewController: RIGSingleImageViewController? {
+    public var currentImageViewController: RIGSingleImageViewController? {
         return viewControllers?.first as? RIGSingleImageViewController
     }
     fileprivate var showDoneButton = true
